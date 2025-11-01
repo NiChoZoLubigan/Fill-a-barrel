@@ -1,0 +1,42 @@
+type: GenericCrafter
+size: 2
+outputLiquid: slag/0.55
+itemCapacity: 10
+hasLiquids: true
+liquidCapacity: 200
+consumes: {
+    items: {
+        items: [
+            fb-barrel-slag/1
+        ]
+    }
+}
+craftTime: 60
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+        type: DrawRegion
+        suffix: -bottom
+        }
+        {
+        type: DrawLiquidTile
+        drawLiquid: slag
+        }
+        {
+        type: DrawDefault
+        }
+    ]
+}
+requirements: [
+    copper/20
+    lead/15
+    metaglass/15
+]
+category: liquid
+research: {
+    parent: fb-oil-unloader
+    objectives: [
+        fb-barrel-slag
+    ]
+}
