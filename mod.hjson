@@ -1,0 +1,10 @@
+name: fb
+displayName: Fill-a-Barrel
+description: 
+    '''
+    Fills and create barrels for transport. Serpulo only.
+    '''
+author: "[#8b008b[]]NiChoZoLubigan[[]]"
+subtitle: Filling is fun
+version: "1.0"
+minGameVersion: 136
