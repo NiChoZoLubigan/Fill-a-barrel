@@ -1,0 +1,220 @@
+type: ItemTurret
+health: 230
+size: 3
+itemCapacity: 25
+targetAir: false
+targetGround: true
+reload: 99
+range: 150
+minRange: 75
+shootCones: 10
+ammoUseEffect: casing2
+recoil:5
+heatColor: ff0000
+rotateSpeed: 7
+ammoTypes: {
+    fb-barrel-water: {
+        type: ArtilleryBulletType
+        damage: 0
+        width: 11
+        height: 11
+        lifetime: 80
+        knockback: 0.8
+        splashDamageRadius: 30
+        splashDamage: 1
+        speed: 2
+        frontColor: 737373f9
+        backColor: ffffff
+        trailColor: 737373e5
+        trailWidth: 3
+        trailLength: 30
+        inaccuracy: 3.5
+        puddles: 1
+        puddleRange: 5
+        puddleAmount: 55
+        puddleLiquid: water
+        status: wet
+        statusDuration: 600
+        hitEffect: none
+        despawnHit: true
+        despawnEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    line: false
+                    sizeFrom: 5
+                    sizeTo: 0
+                    lifeTime: 5
+                    length: 10
+                    baseLength: 10
+                    colorFrom: 7e88b2e0
+                    colorTo: 596ab8e0
+                }
+                {
+                    type: WaveEffect
+                    sizeFrom: 5
+                    sizeTo: 19
+                    colorFrom: 7e88b2e0
+                    colorTo: 596ab8e0
+                }
+            ]
+        }
+    }
+    fb-barrel-oil: {
+        type: ArtilleryBulletType
+        damage: 0
+        width: 11
+        height: 11
+        lifetime: 80
+        knockback: 0.33
+        splashDamageRadius: 30
+        splashDamage: 1
+        speed: 2
+        frontColor: 737373f9
+        backColor: ffffff
+        trailColor: 737373e5
+        trailWidth: 3
+        trailLength: 30
+        inaccuracy: 3.5
+        puddles: 1
+        puddleRange: 5
+        puddleAmount: 55
+        puddleLiquid: oil
+        status: tarred
+        statusDuration: 930
+        hitEffect: none
+        despawnHit: true
+        despawnEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    line: false
+                    sizeFrom: 5
+                    sizeTo: 0
+                    lifeTime: 5
+                    length: 5
+                    baseLength: 10
+                    colorFrom: 525252e0
+                    colorTo: 313131e0
+                }
+                {
+                    type: WaveEffect
+                    sizeFrom: 5
+                    sizeTo: 19
+                    colorFrom: 525252e0
+                    colorTo: 313131e0
+                }
+            ]
+        }
+    }
+    fb-barrel-slag: {
+        type: ArtilleryBulletType
+        damage: 0
+        width: 11
+        height: 11
+        lifetime: 80
+        knockback: 0.44
+        splashDamageRadius: 30
+        splashDamage: 12
+        speed: 2
+        frontColor: 737373f9
+        backColor: ffffff
+        trailColor: 737373e5
+        trailWidth: 3
+        trailLength: 30
+        inaccuracy: 3.5
+        puddles: 1
+        puddleRange: 5
+        puddleAmount: 55
+        puddleLiquid: slag
+        status: melting
+        statusDuration: 600
+        hitEffect: none
+        despawnHit: true
+        despawnEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    line: false
+                    sizeFrom: 5
+                    sizeTo: 0
+                    lifeTime: 5
+                    length: 5
+                    baseLength: 10
+                    colorFrom: fe8235
+                    colorTo: ffa166
+                }
+                {
+                    type: WaveEffect
+                    sizeFrom: 5
+                    sizeTo: 19
+                    colorFrom: fe8235
+                    colorTo: ffa166
+                }
+            ]
+        }
+    }
+    fb-barrel-cryo: {
+        type: ArtilleryBulletType
+        damage: 0
+        width: 11
+        height: 11
+        lifetime: 80
+        knockback: 0.5
+        splashDamageRadius: 30
+        splashDamage: 1
+        speed: 2
+        frontColor: 737373f9
+        backColor: ffffff
+        trailColor: 737373e5
+        trailWidth: 3
+        trailLength: 30
+        inaccuracy: 3.5
+        puddles: 1
+        puddleRange: 5
+        puddleAmount: 55
+        puddleLiquid: cryofluid
+        status: freezing
+        statusDuration: 600
+        hitEffect: none
+        despawnHit: true
+        despawnEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    line: false
+                    sizeFrom: 5
+                    sizeTo: 0
+                    lifeTime: 5
+                    length: 5
+                    baseLength: 10
+                    colorFrom: 1eaddc
+                    colorTo: 6ecdec
+                }
+                {
+                    type: WaveEffect
+                    sizeFrom: 5
+                    sizeTo: 19
+                    colorFrom: 1eaddc
+                    colorTo: 6ecdec
+                }
+            ]
+        }
+    }
+}
+requirements: [
+    copper/75
+    silicon/50
+    metaglass/25
+    titanium/20
+]
+category: turret
+research: wave
